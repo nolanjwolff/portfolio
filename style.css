@@ -177,7 +177,7 @@ img { max-width: 100%; display: block; }
 }
 .hero-title {
   font-family: var(--font-head);
-  font-size: clamp(3rem, 16vw, 6rem);
+  font-size: clamp(3rem, 20vw, 6rem);
   font-weight: 800;
   line-height: 1.0;
   letter-spacing: -0.02em;
