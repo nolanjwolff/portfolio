@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-name">ALEX CHEN</span>
+      <span class="logo-bracket">]</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+
+      <!-- Dropdown: Projects -->
+      <li class="dropdown">
+        <a href="#projects" class="nav-link dropdown-toggle">
+          Projects <span class="chevron">▾</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#robotics">Robotics</a></li>
+          <li><a href="#personal">Personal Projects</a></li>
+          <li><a href="#classes">Engineering Classes</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">// Engineering Portfolio</p>
+      <h1 class="hero-title">
+        Building the<br/>
+        <span class="hero-accent">Future,</span><br/>
+        One System<br/>at a Time.
+      </h1>
+      <p class="hero-sub">Robotics · Mechanical Design · Software Systems</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-stat-bar">
+      <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Projects</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Competitions</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">6</span><span class="stat-label">Engineering Courses</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">2</span><span class="stat-label">Years Experience</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label">// 01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Engineer.<br/>Builder.<br/>Problem Solver.</h2>
+          <p>I'm a passionate engineering student focused on bridging the gap between hardware and software. From autonomous robots to mechanical systems, I design, build, and iterate until it works.</p>
+          <p>Currently competing in <strong>FRC Robotics</strong> and pursuing coursework in mechanical and electrical engineering.</p>
+          <a href="#projects" class="btn-primary" style="margin-top:2rem;display:inline-block;">See My Work</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="card-tag">// Profile</div>
+            <div class="card-row"><span>Name</span><span>Alex Chen</span></div>
+            <div class="card-row"><span>Focus</span><span>Robotics & ME</span></div>
+            <div class="card-row"><span>Status</span><span class="status-dot">Available</span></div>
+            <div class="card-row"><span>Location</span><span>United States</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROJECTS ══════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label">// 02 — Projects</div>
+      <h2 class="section-title">Selected Work</h2>
+
+      <!-- Tab Nav -->
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="robotics">Robotics</button>
+        <button class="tab-btn" data-tab="personal">Personal</button>
+        <button class="tab-btn" data-tab="classes">Engineering Classes</button>
+      </div>
+
+      <!-- ── ROBOTICS ── -->
+      <div class="tab-pane active" id="robotics">
+        <div class="projects-grid">
+
+          <article class="project-card" onclick="openModal('robot1')">
+            <div class="project-img" style="background: linear-gradient(135deg,#0d1b2a,#1b4332);">
+              <div class="project-icon">⚙️</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">FRC · 2024</div>
+              <h3>Autonomous Drive System</h3>
+              <p>Designed and programmed a swerve-drive chassis with vision-based auto-alignment using AprilTags and PathPlanner trajectories.</p>
+              <div class="project-tech">
+                <span>Java</span><span>WPILib</span><span>Limelight</span>
+              </div>
+            </div>
+            <div class="project-arrow">→</div>
+          </article>
+
+          <article class="project-card" onclick="openModal('robot2')">
+            <div class="project-img" style="background: linear-gradient(135deg,#1a1a2e,#16213e);">
+              <div class="project-icon">🦾</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">FRC · 2023</div>
+              <h3>4-Bar Intake Mechanism</h3>
+              <p>Engineered a game-piece intake with a parallel 4-bar linkage for consistent geometry throughout range of motion.</p>
+              <div class="project-tech">
+                <span>CAD</span><span>OnShape</span><span>Aluminum</span>
+              </div>
+            </div>
+            <div class="project-arrow">→</div>
+          </article>
+
+          <article class="project-card" onclick="openModal('robot3')">
+            <div class="project-img" style="background: linear-gradient(135deg,#2d0a0a,#4a1010);">
+              <div class="project-icon">🤖</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Personal · 2024</div>
+              <h3>Line-Following Robot</h3>
+              <p>Built a PID-controlled line follower from scratch using IR sensors, custom PCB, and 3D-printed chassis.</p>
+              <div class="project-tech">
+                <span>Arduino</span><span>PID</span><span>PCB Design</span>
+              </div>
+            </div>
+            <div class="project-arrow">→</div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── PERSONAL ── -->
+      <div class="tab-pane" id="personal">
+        <div class="projects-grid">
+
+          <article class="project-card" onclick="openModal('pers1')">
+            <div class="project-img" style="background: linear-gradient(135deg,#0f2027,#203a43);">
+              <div class="project-icon">🌐</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Web · 2024</div>
+              <h3>Portfolio Website</h3>
+              <p>Designed and developed this portfolio site from scratch using HTML, CSS, and vanilla JS with a focus on performance and aesthetics.</p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+            <div class="project-arrow">→</div>
+          </article>
+
+          <article class="project-card" onclick="openModal('pers2')">
+            <div class="project-img" style="background: linear-gradient(135deg,#1a0533,#2d1057);">
+              <div class="project-icon">📡</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Electronics · 2023</div>
+              <h3>Weather Station</h3>
+              <p>Raspberry Pi-based weather monitor logging temperature, humidity, and pressure with a live web dashboard.</p>
+              <div class="project-tech">
+                <span>Python</span><span>RPi</span><span>Flask</span>
+              </div>
+            </div>
+            <div class="project-arrow">→</div>
+          </article>
+
+          <article class="project-card" onclick="openModal('pers3')">
+            <div class="project-img" style="background: linear-gradient(135deg,#0a2e0a,#1a4d1a);">
+              <div class="project-icon">🖨️</div>
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Hardware · 2023</div>
+              <h3>Custom 3D Printer Mod</h3>
+              <p>Upgraded an Ender 3 with a direct-drive extruder, ABL sensor, and custom firmware for improved print quality.</p>
+              <div class="project-tech">
+                <span>Marlin</span><span>CAD</span><span>Electronics</span>
+              </div>
+            </div>
+            <div class="project-arrow">→</div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── CLASSES ── -->
+      <div class="tab-pane" id="classes">
+        <div class="classes-list">
+
+          <div class="class-item" onclick="openModal('class1')">
+            <div class="class-number">01</div>
+            <div class="class-info">
+              <h3>Introduction to Engineering Design</h3>
+              <p>Design process, CAD modeling, prototyping, and technical documentation. Final project: fully functional mechanical assembly.</p>
+            </div>
+            <div class="class-meta">
+              <span class="class-grade">A</span>
+              <span class="class-year">2023</span>
+            </div>
+            <span class="class-arrow">→</span>
+          </div>
+
+          <div class="class-item" onclick="openModal('class2')">
+            <div class="class-number">02</div>
+            <div class="class-info">
+              <h3>Statics & Mechanics of Materials</h3>
+              <p>Force analysis, free body diagrams, stress/strain, beam bending, and structural design principles.</p>
+            </div>
+            <div class="class-meta">
+              <span class="class-grade">A-</span>
+              <span class="class-year">2023</span>
+            </div>
+            <span class="class-arrow">→</span>
+          </div>
+
+          <div class="class-item" onclick="openModal('class3')">
+            <div class="class-number">03</div>
+            <div class="class-info">
+              <h3>Electrical Circuits & Systems</h3>
+              <p>Circuit theory, op-amps, filters, microcontroller interfacing, and PCB layout fundamentals.</p>
+            </div>
+            <div class="class-meta">
+              <span class="class-grade">B+</span>
+              <span class="class-year">2024</span>
+            </div>
+            <span class="class-arrow">→</span>
+          </div>
+
+          <div class="class-item" onclick="openModal('class4')">
+            <div class="class-number">04</div>
+            <div class="class-info">
+              <h3>Programming for Engineers</h3>
+              <p>Python and C++ applied to engineering problems: numerical methods, data analysis, and automation scripts.</p>
+            </div>
+            <div class="class-meta">
+              <span class="class-grade">A</span>
+              <span class="class-year">2024</span>
+            </div>
+            <span class="class-arrow">→</span>
+          </div>
+
+          <div class="class-item" onclick="openModal('class5')">
+            <div class="class-number">05</div>
+            <div class="class-info">
+              <h3>Thermodynamics</h3>
+              <p>Laws of thermodynamics, heat transfer, energy systems, and engineering applications of thermodynamic cycles.</p>
+            </div>
+            <div class="class-meta">
+              <span class="class-grade">B+</span>
+              <span class="class-year">2024</span>
+            </div>
+            <span class="class-arrow">→</span>
+          </div>
+
+          <div class="class-item" onclick="openModal('class6')">
+            <div class="class-number">06</div>
+            <div class="class-info">
+              <h3>Control Systems</h3>
+              <p>PID control, Laplace transforms, transfer functions, stability analysis, and embedded control implementation.</p>
+            </div>
+            <div class="class-meta">
+              <span class="class-grade">A-</span>
+              <span class="class-year">2025</span>
+            </div>
+            <span class="class-arrow">→</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">// 03 — Skills</div>
+      <h2 class="section-title">Technical Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-title">Software</div>
+          <div class="skill-bar-list">
+            <div class="skill-row"><span>Java / WPILib</span><div class="bar"><div class="bar-fill" style="--w:90%"></div></div></div>
+            <div class="skill-row"><span>Python</span><div class="bar"><div class="bar-fill" style="--w:80%"></div></div></div>
+            <div class="skill-row"><span>C / C++</span><div class="bar"><div class="bar-fill" style="--w:70%"></div></div></div>
+            <div class="skill-row"><span>HTML / CSS / JS</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Hardware & CAD</div>
+          <div class="skill-bar-list">
+            <div class="skill-row"><span>OnShape / Fusion 360</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></div>
+            <div class="skill-row"><span>3D Printing / FDM</span><div class="bar"><div class="bar-fill" style="--w:90%"></div></div></div>
+            <div class="skill-row"><span>PCB Design (KiCad)</span><div class="bar"><div class="bar-fill" style="--w:65%"></div></div></div>
+            <div class="skill-row"><span>Laser Cutting / CNC</span><div class="bar"><div class="bar-fill" style="--w:75%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Tools & Platforms</div>
+          <div class="skill-bar-list">
+            <div class="skill-row"><span>Git / GitHub</span><div class="bar"><div class="bar-fill" style="--w:80%"></div></div></div>
+            <div class="skill-row"><span>Arduino / RPi</span><div class="bar"><div class="bar-fill" style="--w:88%"></div></div></div>
+            <div class="skill-row"><span>Linux / Bash</span><div class="bar"><div class="bar-fill" style="--w:70%"></div></div></div>
+            <div class="skill-row"><span>MATLAB</span><div class="bar"><div class="bar-fill" style="--w:60%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">// 04 — Contact</div>
+      <h2 class="section-title">Let's Build<br/>Something.</h2>
+      <p class="contact-sub">Open to internships, collaborations, and robotics conversations.</p>
+      <div class="contact-links">
+        <a href="mailto:alex@example.com" class="contact-btn">
+          <span class="contact-icon">✉</span> alex@example.com
+        </a>
+        <a href="https://github.com" target="_blank" class="contact-btn">
+          <span class="contact-icon">⌥</span> GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="contact-btn">
+          <span class="contact-icon">◈</span> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">[AC]</span>
+      <span class="footer-copy">© 2025 Alex Chen — Engineering Portfolio</span>
+      <a href="#home" class="back-top">↑ Top</a>
+    </div>
+  </footer>
+
+  <!-- ══════════════ MODAL ══════════════ -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
