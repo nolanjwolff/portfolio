@@ -165,7 +165,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 1400px;
   animation: fadeUp 0.9s ease both;
 }
 .hero-label {
