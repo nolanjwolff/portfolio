@@ -57,16 +57,16 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 // ── Modal data ──
 const modalData = {
   robot1: {
-    tag: 'FRC · Robotics · 2024',
+    tag: 'VEX · Robotics · 2025',
     title: 'Autonomous Drive System',
     desc: 'Designed and programmed a full swerve-drive chassis with vision-based auto-alignment. Used AprilTag fiducials detected by Limelight for field-relative positioning, and PathPlanner for smooth autonomous trajectories. The system achieved sub-inch positioning accuracy during competition.',
     chips: ['Java', 'WPILib', 'Limelight', 'PathPlanner', 'Swerve Drive', 'AprilTags']
   },
   robot2: {
-    tag: 'FRC · Robotics · 2023',
+    tag: 'VEX · Robotics · 2023',
     title: '4-Bar Intake Mechanism',
     desc: 'Engineered a game-piece intake mechanism using a parallel 4-bar linkage, ensuring the intake end maintains a constant angle throughout the full range of motion. Manufactured from 1×1 aluminum box tube with custom gussets. Iterated through 3 prototypes before finalizing the competition design.',
-    chips: ['OnShape', 'CAD', 'Aluminum Fabrication', 'FRC', 'Mechanical Design']
+    chips: ['OnShape', 'CAD', 'Aluminum Fabrication', 'VEX', 'Mechanical Design']
   },
   robot3: {
     tag: 'Personal · Robotics · 2024',
@@ -75,19 +75,19 @@ const modalData = {
     chips: ['Arduino', 'C++', 'PID Control', 'KiCad', 'PCB Design', '3D Printing']
   },
   pers1: {
-    tag: 'Personal · Web · 2024',
+    tag: 'Personal · Web · 2026',
     title: 'Portfolio Website',
     desc: 'Designed and developed this engineering portfolio from scratch with no frameworks — pure HTML, CSS, and JavaScript. Focused on a clean industrial aesthetic, smooth animations, and mobile responsiveness. Hosted on GitHub Pages.',
     chips: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages', 'Responsive Design']
   },
   pers2: {
-    tag: 'Personal · Electronics · 2023',
-    title: 'Weather Station',
-    desc: 'Built a Raspberry Pi-based environmental monitor that logs temperature, humidity, and barometric pressure every 60 seconds. Data is stored in a local SQLite database and displayed on a live web dashboard built with Flask and Chart.js.',
-    chips: ['Python', 'Raspberry Pi', 'Flask', 'SQLite', 'Chart.js', 'Electronics']
+    tag: 'Personal · Robotics · 2026 · In Progress',
+    title: 'FPV Drone',
+    desc: 'With the help of a friend, we are currently building a FPV racing drove with motors, fast paced image processing, and a flight controller that will follow a person in frame ',
+    chips: ['Python', 'Raspberry Pi', 'Image Processing', 'Control Theory', 'Electronics']
   },
   pers3: {
-    tag: 'Personal · Hardware · 2023',
+    tag: 'Personal · Programming · 2023',
     title: 'Custom 3D Printer Mod',
     desc: 'Upgraded an Ender 3 with a direct-drive Sprite extruder, BLTouch auto bed leveling, and a new 32-bit mainboard running Marlin 2.0. Designed and printed a custom toolhead mount and cable management system. Drastically improved print quality and reliability.',
     chips: ['Marlin Firmware', 'CAD', 'Electronics', 'FDM', '3D Printing']
