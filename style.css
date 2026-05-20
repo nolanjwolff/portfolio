@@ -165,7 +165,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 100%;
   animation: fadeUp 0.9s ease both;
 }
 .hero-label {
@@ -177,11 +177,12 @@ img { max-width: 100%; display: block; }
 }
 .hero-title {
   font-family: var(--font-head);
-  font-size: clamp(4rem, 20vw, 6rem);
+  font-size: clamp(4rem, 10vw, 10rem);
   font-weight: 800;
   line-height: 1.0;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
+  white-space: nowrap; 
 }
 .hero-accent {
   color: var(--accent);
