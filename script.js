@@ -57,22 +57,22 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 // ── Modal data ──
 const modalData = {
   robot1: {
-    tag: 'VEX · Robotics · 2025',
+    tag: 'VEX · Push Back · 2025',
     title: 'Autonomous Drive System',
-    desc: 'Designed and programmed a full swerve-drive chassis with vision-based auto-alignment. Used AprilTag fiducials detected by Limelight for field-relative positioning, and PathPlanner for smooth autonomous trajectories. The system achieved sub-inch positioning accuracy during competition.',
-    chips: ['Java', 'WPILib', 'Limelight', 'PathPlanner', 'Swerve Drive', 'AprilTags']
+    desc: "The Push Back competition was one with a lot of areas to be able to reset a robot's pose. With this we were able to develop lightweight code that just used PID controllers to drive and turn and was able ot get a high skill score in the state.",
+    chips: ['C++', 'PROS', 'IMUs', 'VEXos', 'Inertial Sensor', 'Motor Encoders']
   },
   robot2: {
-    tag: 'VEX · Robotics · 2023',
-    title: '4-Bar Intake Mechanism',
-    desc: 'Engineered a game-piece intake mechanism using a parallel 4-bar linkage, ensuring the intake end maintains a constant angle throughout the full range of motion. Manufactured from 1×1 aluminum box tube with custom gussets. Iterated through 3 prototypes before finalizing the competition design.',
-    chips: ['OnShape', 'CAD', 'Aluminum Fabrication', 'VEX', 'Mechanical Design']
+    tag: 'VEX · High Stakes · 2025',
+    title: 'PID Control',
+    desc: 'Researched and developed my own math for using PID control for our driving and turning. Uses less integral control and balances out derivative and proportional movement. Also developed a way to view the change over time in a graph on excel after a test.',
+    chips: ['C++', 'PROS', 'IMUs', 'Motor Encoders', 'Calculus']
   },
   robot3: {
-    tag: 'Personal · Robotics · 2024',
-    title: 'Line-Following Robot',
-    desc: 'Built a PID-controlled line follower from the ground up. Designed a custom PCB for the IR sensor array, wrote tunable PID firmware in C++ on Arduino, and 3D printed the chassis with integrated sensor mounting. Achieved smooth tracking at high speeds with minimal oscillation.',
-    chips: ['Arduino', 'C++', 'PID Control', 'KiCad', 'PCB Design', '3D Printing']
+    tag: 'VEX · Override · 2026 · In Progress',
+    title: 'Odomotry Arcing Drivetrain',
+    desc: 'Used triganomic functions in a sketch to develop the math needed to know where the robot is and where it needs to go. uses coordinate geometry to precisley predict the path that the robot needs to follow. The best part is that it only needs forward motors and an IMU',
+    chips: ['C++', 'IMUs', 'PID Control', 'Motor Encoders', 'Trigonometry', 'Coordinate Geometry']
   },
   pers1: {
     tag: 'Personal · Web · 2026',
