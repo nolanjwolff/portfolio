@@ -93,40 +93,34 @@ const modalData = {
     chips: ['Marlin Firmware', 'CAD', 'Electronics', 'FDM', '3D Printing']
   },
   class1: {
-    tag: 'Engineering Class · 2023',
+    tag: 'Engineering Class · 2025',
     title: 'Introduction to Engineering Design',
     desc: 'Covered the full engineering design process: problem definition, ideation, prototyping, testing, and iteration. Learned CAD modeling in SolidWorks and created full technical documentation packages. Final project was a fully functional mechanical assembly evaluated on performance and design quality.',
-    chips: ['SolidWorks', 'CAD', 'Prototyping', 'Technical Writing', 'Design Process']
+    chips: ['Fusion360', 'CAD', 'Prototyping', 'Technical Writing', 'Design Process']
   },
   class2: {
-    tag: 'Engineering Class · 2023',
-    title: 'Statics & Mechanics of Materials',
-    desc: 'Analyzed forces in static structures using free body diagrams and equilibrium equations. Studied stress, strain, beam bending, shear diagrams, and moment diagrams. Applied concepts to real structural design scenarios and material selection decisions.',
-    chips: ['Statics', 'Stress Analysis', 'Beam Theory', 'MATLAB', 'Structural Design']
+    tag: 'Math Class · 2025',
+    title: 'Algebra 2 Honors',
+    desc: 'Developed a deep understanding of core algebraic structures and their applications. Topics included trigonometric identities and equations, matrix operations and transformations, conic sections, sequences and series, as well as foundational probability and statistics. Emphasis on proof-based reasoning and preparing for higher-level math.',
+    chips: ['Trig', 'Matracies', 'Conics', 'Statistics', 'Probability']
   },
   class3: {
-    tag: 'Engineering Class · 2024',
-    title: 'Electrical Circuits & Systems',
-    desc: 'Circuit analysis using Kirchhoff\'s laws, Thevenin/Norton equivalents, and phasor analysis. Studied op-amps, analog filters, and digital logic. Lab component involved PCB layout in KiCad and microcontroller interfacing with sensors and actuators.',
-    chips: ['Circuit Analysis', 'Op-Amps', 'KiCad', 'PCB Layout', 'Microcontrollers']
+    tag: 'Engineering Class · 2025',
+    title: 'Physics 1',
+    desc: 'Introductory physics course covering the major domains of classical and applied physics. Studied 1D and 2D kinematics, Newtons laws, and projectile motion. Analyzed electrical circuits using Ohms law and series/parallel configurations. Explored power and energy relationships, and finished with geometrical optics including reflection, refraction, and lenses.',
+    chips: ['Kinematics', 'Circuits', 'Power', 'Optics', "Newton's Laws"]
   },
   class4: {
-    tag: 'Engineering Class · 2024',
-    title: 'Programming for Engineers',
-    desc: 'Applied Python and C++ to engineering problem sets: root-finding, numerical integration, data analysis with NumPy/Pandas, and automation scripting. Final project involved processing real sensor data and generating automated engineering reports.',
-    chips: ['Python', 'C++', 'NumPy', 'Pandas', 'Numerical Methods', 'Data Analysis']
+    tag: 'Engineering Class · 2026',
+    title: 'Principles of Engineering',
+    desc: 'Project-driven course introducing the engineering design process across multiple disciplines. Built and programmed robots using sensor integration, completed electronics labs involving circuit design and breadboarding, applied kinematics to mechanical systems, and collaborated on team engineering challenges. Coding projects included Python scripting and microcontroller programming.',
+    chips: ['Python', 'Robotics', 'Electronics', 'Kinematics', 'Team Design', 'Micro controllers']
   },
   class5: {
-    tag: 'Engineering Class · 2024',
-    title: 'Thermodynamics',
-    desc: 'Studied the first and second laws of thermodynamics, thermodynamic properties of fluids, and analysis of power cycles (Rankine, Brayton, Otto). Applied concepts to engineering system design including heat exchangers and refrigeration cycles.',
-    chips: ['Thermodynamics', 'Heat Transfer', 'Power Cycles', 'MATLAB', 'Energy Systems']
-  },
-  class6: {
-    tag: 'Engineering Class · 2025',
-    title: 'Control Systems',
-    desc: 'Designed feedback control systems using PID controllers, Laplace transforms, and Bode plots for stability analysis. Implemented and tuned controllers on embedded hardware. Applied theory directly to the robotics drive system autonomous alignment project.',
-    chips: ['PID Control', 'Laplace Transforms', 'Bode Plots', 'Embedded Systems', 'MATLAB/Simulink']
+    tag: 'Math Class · 2026',
+    title: 'Pre-Calculus Honors',
+    desc: 'Rigorous preparation for AP Calculus through mastery of advanced pre-calculus topics. Covered trigonometric functions, identities, and inverse functions in depth; explored exponential and logarithmic functions; studied limits and an introduction to derivatives; and concluded with the Fundamental Theorem of Calculus as a bridge to full calculus coursework.',
+    chips: ['Trig', 'Logarithms', 'Limits', 'Derivative', 'Fundamental Theorem of Calculus']
   }
 };
 
