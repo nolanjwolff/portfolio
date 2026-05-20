@@ -179,7 +179,7 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-head);
   font-size: 6vw;
   font-weight: 700;
-  line-height: 0.8;
+  line-height: 1;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
 }
