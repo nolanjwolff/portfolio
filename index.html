@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engineering Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <script>
+    document.write(`<link rel="stylesheet" href="style.css?v=${Date.now()}">`);
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <!-- ══════════════ NAVBAR ══════════════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-logo">
@@ -374,6 +375,9 @@
     </div>
   </div>
 
-  <script src="script.js?v=2"></script>
+  <script>
+    document.write(`<script src="script.js?v=${Date.now()}"><\/script>`);
+  </script>
+
 </body>
 </html>
