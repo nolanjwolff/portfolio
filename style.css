@@ -177,12 +177,11 @@ img { max-width: 100%; display: block; }
 }
 .hero-title {
   font-family: var(--font-head);
-  font-size: clamp(4rem, 10vw, 10rem);
+  font-size: 8vw;
   font-weight: 800;
   line-height: 1.0;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
-  white-space: nowrap; 
 }
 .hero-accent {
   color: var(--accent);
