@@ -194,7 +194,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.15em;
   margin-bottom: 2.5rem;
 }
-.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
 
 /* Stat bar */
 .hero-stat-bar {
