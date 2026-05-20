@@ -177,9 +177,9 @@ img { max-width: 100%; display: block; }
 }
 .hero-title {
   font-family: var(--font-head);
-  font-size: 8vw;
-  font-weight: 800;
-  line-height: 1.0;
+  font-size: 6vw;
+  font-weight: 700;
+  line-height: 0.75;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
 }
