@@ -120,7 +120,7 @@ const modalData = {
     tag: 'Math Class · 2026',
     title: 'Pre-Calculus Honors',
     desc: 'Rigorous preparation for AP Calculus through mastery of advanced pre-calculus topics. Covered trigonometric functions, identities, and inverse functions in depth; explored exponential and logarithmic functions; studied limits and an introduction to derivatives; and concluded with the Fundamental Theorem of Calculus as a bridge to full calculus coursework.',
-    chips: ['Trig', 'Logarithms', 'Limits', 'Derivative', 'Fundamental Theorem of Calculus']
+    chips: ['Trig', 'Logarithms', 'Limits', 'Derivatives', 'Fundamental Theorem of Calculus']
   }
 };
 
